@@ -13,7 +13,7 @@ services:
     depends_on: 
        - db
   db:
-    image: mysql:5.7
+    image: brunomarins/mysql-with-people-table
     command: --innodb-use-native-aio=0
     container_name: mysql-node
     restart: always
